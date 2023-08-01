@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="fetch_db_wizard_view_form" model="ir.ui.view">
+        <field name="name">fetch.db.wizard.view.form</field>
+        <field name="model">fetch.db.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="db_one"/>
+                        <field name="db_one_username"/>
+                        <field name="db_one_password" password="True"/>
+                    </group>
+                    <group>
+                        <field name="db_two"/>
+                        <field name="db_two_username"/>
+                        <field name="db_two_password" password="True"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="action_done" string="Confirm" type="object"
+                            class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary"
+                            special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="fetch_db_wizard_action" model="ir.actions.act_window">
+        <field name="name">fetch.db.wizard</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">fetch.db.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="fetch_db_wizard_view_form"/>
+        <field name="target">new</field>
+    </record>
+</odoo>

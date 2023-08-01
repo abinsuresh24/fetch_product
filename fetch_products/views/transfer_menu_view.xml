@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_transfer_products" name="Transfers"
+              parent="sale.menu_sale_config"
+              action="fetch_db_wizard_action">
+    </menuitem>
+</odoo>
