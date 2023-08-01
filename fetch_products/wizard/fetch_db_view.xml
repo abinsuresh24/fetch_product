@@ -7,11 +7,13 @@
             <form>
                 <group>
                     <group>
+                        <field name="db_one_url" placeholder="http://cybrosys:8015"/>
                         <field name="db_one"/>
                         <field name="db_one_username"/>
                         <field name="db_one_password" password="True"/>
                     </group>
                     <group>
+                        <field name="db_two_url" placeholder="http://cybrosys:8016"/>
                         <field name="db_two"/>
                         <field name="db_two_username"/>
                         <field name="db_two_password" password="True"/>
